@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Profile Scraper(by UserName)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">CoreClaw Worker Playground</span>
+          <h1>Instagram Profile Scraper(by UserName)</h1>
+          <p class="hero-text">
+            输入 CoreClaw API Token 和一个或多个 Instagram 用户名，直接调用
+            CoreClaw 的 Instagram Profile Scraper，拉取账号公开资料并查看结构化结果。
+          </p>
+        </div>
+        <div class="hero-note">
+          <h2>这个网页会做什么</h2>
+          <ul>
+            <li>读取你输入的 CoreClaw API Token</li>
+            <li>调用指定 worker 的运行接口</li>
+            <li>轮询运行状态并加载抓取结果</li>
+            <li>展示账号概览与完整 JSON 返回</li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="panel form-panel">
+          <div class="panel-heading">
+            <h2>运行参数</h2>
+            <p>当前 worker 仅要求一个字段：Instagram 用户名列表。</p>
+          </div>
+
+          <form id="scraper-form">
+            <label class="field-block">
+              <span>CoreClaw API Token</span>
+              <input
+                id="apiToken"
+                name="apiToken"
+                type="password"
+                placeholder="输入 scraper_api_..."
+                autocomplete="off"
+                required
+              />
+              <small>不会上传到 GitHub；只会在你本地浏览器里发起请求。</small>
+            </label>
+
+            <label class="field-block">
+              <span>Instagram 用户名</span>
+              <textarea
+                id="usernames"
+                name="usernames"
+                rows="8"
+                placeholder="nasa&#10;instagram&#10;natgeo"
+                required
+              ></textarea>
+              <small>每行一个用户名，只填用户名，不要带完整链接。</small>
+            </label>
+
+            <div class="actions">
+              <button type="submit" id="submitBtn">开始抓取</button>
+              <button type="button" id="fillDemoBtn" class="secondary">填入示例</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel result-panel">
+          <div class="panel-heading">
+            <h2>运行结果</h2>
+            <p>状态、账号卡片和完整 JSON 会显示在这里。</p>
+          </div>
+
+          <div id="statusBox" class="status-box idle">
+            等待输入参数。
+          </div>
+
+          <div id="summaryCards" class="summary-grid empty-state">
+            <div class="empty-card">运行完成后，这里会显示账号摘要。</div>
+          </div>
+
+          <div class="json-header">
+            <h3>完整 JSON</h3>
+            <button type="button" id="copyJsonBtn" class="secondary" disabled>复制 JSON</button>
+          </div>
+          <pre id="jsonOutput" class="json-output">暂无结果</pre>
+        </section>
+      </main>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
