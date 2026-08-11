@@ -17,9 +17,8 @@ CoreClaw provides 100+ ready-to-use data scraping tools for platforms like Amazo
 ---
 
 ## ✨ Overview
-This project is a lightweight static web interface for running the CoreClaw `instagram-profile-data-scraper` worker directly from the browser.
-
-It lets you enter a CoreClaw API token, submit one or more Instagram usernames, launch an asynchronous scraping task, poll the task status, and inspect the structured result in a clean UI.
+The Instagram Scraper is a project designed to extract data from public Instagram profiles. 
+It utilizes web scraping techniques to gather information such as user details, posts, followers, and following, providing valuable insights for various analytical purposes.
 
 ---
 
