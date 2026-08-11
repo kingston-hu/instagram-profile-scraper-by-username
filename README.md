@@ -1,7 +1,7 @@
 # Instagram Profile Scraper by Username ⚡📸
 
 ## ⚡ Sponsor
-**CoreClaw — Web Scraping Platform & Ready-to-Use Data Extraction Tools**
+**[CoreClaw](https://www.coreclaw.com/zh/coreclaw/instagram-profile-scraper?utm_source=github&utm_medium=referral&utm_campaign=ins&utm_term=&utm_id=ins) — Web Scraping Platform & Ready-to-Use Data Extraction Tools**
 
 ![CoreClaw Sponsor Banner](./assets/coreclaw-sponsor.jpg)
 
@@ -12,7 +12,7 @@ CoreClaw provides 100+ ready-to-use data scraping tools for platforms like Amazo
 - 🛡️ **Pay-Per-Success** — Only pay for successful results with no wasted budget on failed extractions.
 
 ### 🎁 Special Offer
-**Get started with a free $3 trial today!**
+**[Get started with a free $3 trial today!](https://www.coreclaw.com/zh/coreclaw/instagram-profile-scraper?utm_source=github&utm_medium=referral&utm_campaign=ins&utm_term=&utm_id=ins)**
 
 ---
 
